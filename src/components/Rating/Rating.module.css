@@ -11,11 +11,19 @@
   text-align: left;
 }
 
+.panel.thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 .star {
-  width: 16px;
-  height: 16px;
+  width: 20px;
+  height: 20px;
   background: #262e38;
-  padding: 16px;
+  padding: 20px;
   border-radius: 100%;
 }
 
@@ -24,12 +32,12 @@
   font-weight: 700;
   font-size: 32px;
   line-height: 35px;
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 .description {
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   line-height: 24px;
   color: #969fad;
 }
@@ -49,6 +57,16 @@
   color: #7c8798;
 }
 
+.rating:hover {
+  background: #7c8798;
+  color: white;
+}
+
+.rating.active {
+  background: #fc7614;
+  color: white;
+}
+
 .submit {
   width: 100%;
   height: 50px;
@@ -58,5 +76,24 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
+  margin-top: 32px;
+}
+
+.submit:hover {
+  background: white;
+  color: #fc7614;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 193px;
+  height: 32px;
+  border-radius: 22.5px;
+  background: #262e38;
+  color: #fc7614;
+  font-weight: 500;
+  padding: 5px;
   margin-top: 32px;
 }
