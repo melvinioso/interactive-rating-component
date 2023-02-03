@@ -13,8 +13,12 @@ const Rating = () => {
   }
 
   return submitted ? (
-    <div className={`${styles.panel} ${styles.thanks}`}>
-      <img src="/illustration-thank-you.svg" alt="thanks" />
+    <div className={`${styles.panel} ${styles.center}`}>
+      <img
+        className={styles.thanks}
+        src="/illustration-thank-you.svg"
+        alt="thanks"
+      />
 
       <div className={styles.selected}>
         You selected {selectedRating} out of 5
